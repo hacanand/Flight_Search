@@ -18,9 +18,7 @@
     },
     }
     ```
-  ```
 
-  ```
 - once you have cloned the project run the following command to create the database
   ```bash
   npx sequelize db:create
