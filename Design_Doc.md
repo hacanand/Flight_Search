@@ -59,6 +59,32 @@ This is a simple airline booking system that allows users to book flights, view 
    models/
    config/
 
+## Db design
+- Airline
+  - id
+  - model number
+  - capacity
+
+- Airport
+  - id
+  - name
+  - city_id
+  -address
+
+- City
+  - id
+  - name
+
+- Flights
+  - departure_city_id
+  - destination_city_id
+  - airplane_id
+  - departure
+  - arrival
+  - Flight number
+
+a flight belongs
+
 
 
 

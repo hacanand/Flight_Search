@@ -23,3 +23,8 @@
   ```bash
   npx sequelize db:create
   ```
+- then run the following command to create the tables
+- 
+ ```bash
+  npx sequelize db:migrate
+  ```
