@@ -2,4 +2,3 @@
 show TabLes;
 desc cities;
 select * from cities;
-```
