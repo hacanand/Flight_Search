@@ -1,5 +1,6 @@
-const { CityRepository } = require("../repository");
+const CityService = require("./city-service");
+ 
 
-exports.module = {
-    CityRepository,
-}
+module.exports = {
+  CityService,
+};

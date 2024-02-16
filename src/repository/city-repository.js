@@ -1,4 +1,4 @@
-const { City } = require("../models/indexdf");
+const { City } = require("../models/index");
 
 class CityRepository {
   async createCity({ name }) {
