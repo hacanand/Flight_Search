@@ -6,4 +6,5 @@ select * from cities;
 show TABLES;;
 desc airports;
 select * from airports;
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                                                                                                                                                                             
+select * from Airports join Cities on Airports.cityId=Cities.id where Cities.id=10;
+                                                                                                                                                       
