@@ -28,3 +28,8 @@
  ```bash
   npx sequelize db:migrate
   ```
+
+## Tables 
+- City->id name createdAt updatedAt
+- airpot ->id name cityId createdAt updatedAt
+- relationship ->city has many airport belong to city

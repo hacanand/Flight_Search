@@ -2,3 +2,8 @@
 show TabLes;
 desc cities;
 select * from cities;
+
+show TABLES;;
+desc airports;
+select * from airports;
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                                                                                                                                                                             
