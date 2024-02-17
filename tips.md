@@ -3,6 +3,8 @@
 - table name should be plural and the model name should be singular. For example, if you have a table called users, the model should be called User.
 
 ## db commands
-- npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer  
-
+- npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer   
+- npx sequelize db:migrate
 - npx sequelize db:seed:all
+- npx sequelize db:seed:undo:all
+- npx sequelize seed:generate --name add-airplane

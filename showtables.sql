@@ -7,4 +7,4 @@ show TABLES;;
 desc airports;
 select * from airports;
 select * from Airports join Cities on Airports.cityId=Cities.id where Cities.id=10;
-                                                                                                                                                       
+select * from airplanes;
