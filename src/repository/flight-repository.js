@@ -9,9 +9,25 @@ class FlightRepository {
     if (data.departureAirportId) {
       filter.departureAirportId = data.departureAirportId;
     }
+    // if (data.minPrice && data.maxPrice) {
+    //     Object.assign(filter, {
+    //         [Op.and]: [
+    //             { price: { [Op.gte]: data.minPrice } },
+    //             { price: { [Op.lte]: data.maxPrice } }
+    //        ]
+    //    })
+      //   }
+      let priceFilter = [];
     if (data.minPrice) {
-      Object.assign(filter, { price: { [Op.gte]: data.minPrice } });
+        //Object.assign(filter,{ price: { [Op.gte]: data.minPrice } })
+        priceFilter.push({ price: { [Op.gte]: data.minPrice } })
     }
+    if (data.maxPrice) {
+        // Object.assign(filter, { price: { [Op.lte]: data.maxPrice } });
+        priceFilter.push({ price: { [Op.lte]: data.maxPrice } })
+    }
+        Object.assign(filter, { [Op.and]: priceFilter });
+    return filter;
   }
 
   async createFlight(data) {
@@ -58,8 +74,10 @@ class FlightRepository {
   }
   async getAllFlights(filter) {
     try {
-      const filterObject = this.createFilter(filter);
-      const flights = await Flights.findAll();
+      const filterObject = this.#createFilter(filter);
+      const flights = await Flights.findAll({
+        where: filterObject,
+      });
       return flights;
     } catch (error) {
       console.log("something went wrong in the  flight repository layer");

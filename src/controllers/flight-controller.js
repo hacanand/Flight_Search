@@ -75,7 +75,7 @@ const update = async (req, res) => {
 };
 const getAll = async (req, res) => {
   try {
-    const flights = await flightService.getAllFlights();
+    const flights = await flightService.getAllFlights(req.body);
     return res.status(200).json({
       data: flights,
       success: true,
