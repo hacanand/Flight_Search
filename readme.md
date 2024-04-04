@@ -1,10 +1,22 @@
 # Welcome to Flight Service
+ This project is made using microservices architecture has many services like
+ Flight service, AirplaneTicketBookingService,ApiGateway,FlightRemainderService,UserAuthService
+ 
+
+
+ - [Design Doc](https://github.com/hacanand/Flight_Search/blob/master/Design_Doc.md)
+# Other Services Link
+- [AirplaneTicketBookingService](https://github.com/hacanand/AirplaneTicketBookingService)
+- [FlightService](https://github.com/hacanand/Flight_Search)
+- [FlightRemainderService](https://github.com/hacanand/FlightRemainderService)
+- [ApiGateway](https://github.com/hacanand/ApiGateway)
+- [UserAuthService](https://github.com/hacanand/UserAuthService)
 
 ## Project Setup
 
 - clone the project from the repository to your local machine
 - run `npm install` to install the dependencies
-- create a `.env` file and add the following environment variables
+- create a `.env` file and add the as needed environment variables
   - `PORT` - the port on which the server will run
   - inside the `src/config folder` create a `config.json` file and add the following
     ```json
